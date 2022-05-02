@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import logoCircle from "../public/image/logoCircle.svg";
+import Avatars from '../public/image/avatars.svg'
 
 export default function Home() {
   return (
@@ -13,26 +14,28 @@ export default function Home() {
       </Head>
 
       <header className={styles.header}>
-      <Image
+        <Image
           width={140}
           height={140}
           className={styles.circle}
           src={logoCircle}
         ></Image>
-        <div className={styles.logo}>
-        </div>
-      
+        <div className={styles.logo}></div>
       </header>
       <main className={styles.main}>
         <div className={styles.baseMain}>
           <div className={styles.textBase}>
             <div className={styles.texto}>
-              <h1 className={styles.busqueMsg} >Busque cuidados imediatos perto de <span className={styles.voce} >VOCÊ</span></h1>
-           
+              <h1 className={styles.busqueMsg}>
+                Busque cuidados imediatos perto de{" "}
+                <span className={styles.voce}>VOCÊ</span>
+              </h1>
             </div>
             <button className={styles.button}>Login</button>
           </div>
-          <div className={styles.avatarsBase}></div>
+          <div className={styles.avatarsBase}>
+           <div className={styles.imageAvatar}></div>
+          </div>
         </div>
       </main>
     </div>
